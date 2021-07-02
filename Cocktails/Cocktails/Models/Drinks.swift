@@ -12,18 +12,32 @@ class Drinks {
     struct Returned: Codable {
         var drinks: [Drink]
     }
+     
+    let alphabet = ["A", "B", "C","D","E","F","G","H","I","J","K","L","M","N","O","P","Q","R","S","T","U","V","W","X","Y","Z"]
+    var alphabetIndex = 0
     
-    
-    let urlString = "https://www.thecocktaildb.com/api/json/v1/1/search.php?f=A"
+    let urlBase = "https://www.thecocktaildb.com/api/json/v1/1/search.php?f="
+    var urlString = ""
     var drinkArray: [Drink] = []
+    var isFetching = false
     
     func getData(completed: @escaping () -> ()) {
-        print("We are accesing the url \(urlString)")
+        guard !isFetching else {
+            print("<><><> didn't call getDatagere becouse we hadn't fetched data. " )
+            completed()
+            return
+        }
         
+        isFetching = true
+        
+        urlString = urlBase + alphabet[alphabetIndex]
+        print("We are accesing the url \(urlString)")
+        alphabetIndex += 1
 
         // Create the url
         guard let url = URL(string: urlString) else {
             print("ERROR: Coud not create the url \(urlString)")
+            isFetching = false
             completed()
             return
         }
@@ -40,12 +54,12 @@ class Drinks {
             do {
                 
                 let returned = try JSONDecoder().decode(Returned.self, from: data!)
-                self.drinkArray = returned.drinks
+                self.drinkArray = self.drinkArray + returned.drinks
                 
             } catch {
                 print("JSON ERROR: \(error.localizedDescription)")
             }
-            
+            self.isFetching = false
             completed()
         }
         

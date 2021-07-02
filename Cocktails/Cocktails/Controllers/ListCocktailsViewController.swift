@@ -22,6 +22,7 @@ class ListCocktailsViewController: UIViewController, UITableViewDelegate {
       
         drinks.getData {
             DispatchQueue.main.async {
+                self.navigationItem.title = "Drinks Shown: \(self.drinks.drinkArray.count)"
                 self.tableView.reloadData()
             }
         }
@@ -47,6 +48,15 @@ extension ListCocktailsViewController: UITextFieldDelegate, UITableViewDataSourc
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
     
         let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath)
+        if indexPath.row == drinks.drinkArray.count-1 && drinks.alphabetIndex <
+            drinks.alphabet.count {
+            drinks.getData {
+                DispatchQueue.main.async {
+                    self.navigationItem.title = "Drinks Shown: \(self.drinks.drinkArray.count)"
+                    self.tableView.reloadData()
+                }
+            }
+        }
         cell.textLabel?.text = drinks.drinkArray[indexPath.row].strDrink
         cell.detailTextLabel?.text = "-"
         return cell
