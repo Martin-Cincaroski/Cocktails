@@ -18,6 +18,8 @@ class DetailViewController: UIViewController {
     @IBOutlet weak var recipeTextView: UITextView!
     
     var drink: Drink!
+    var myDrinks: [String: String] = [:]
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -25,10 +27,12 @@ class DetailViewController: UIViewController {
         if drink == nil {
             drink = Drink()
         }
-     
+        
         updateUserIterface()
         
     }
+    
+   
     
     func updateUserIterface() {
         drinkLabel.text = drink.strDrink
@@ -39,6 +43,7 @@ class DetailViewController: UIViewController {
         glassLabel.text = drink.strGlass
         recipeTextView.text = drink.strInstructions
         createIngredientsList()
+        ratingTextField.text = myDrinks[drink.strDrink] ?? ""
         
         guard let url = URL(string: drink.strDrinkThumb ?? "") else { return }
         do {
@@ -79,6 +84,17 @@ class DetailViewController: UIViewController {
         }
         
     }
+ 
+ 
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let ratingNumber = Int(ratingTextField.text!) {
+            if ratingNumber >= 1 && ratingNumber <= 10 {
+                myDrinks[drink.strDrink] = String(ratingNumber)
+            }
+        }
+    }
+   
     
     @IBAction func cancelButtonPressed(_ sender: UIBarButtonItem) {
         
@@ -89,7 +105,7 @@ class DetailViewController: UIViewController {
             navigationController?.popViewController(animated: true)
         }
     }
-    
-  
 
 }
+    
+
