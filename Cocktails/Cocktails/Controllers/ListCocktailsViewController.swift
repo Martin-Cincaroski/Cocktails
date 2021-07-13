@@ -76,7 +76,7 @@ class ListCocktailsViewController: UIViewController, UITableViewDelegate {
         saveData()
         tableView.reloadData()
     }
-    
+
 }
 
 extension ListCocktailsViewController: UITextFieldDelegate, UITableViewDataSource {
@@ -88,6 +88,9 @@ extension ListCocktailsViewController: UITextFieldDelegate, UITableViewDataSourc
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
     
         let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath)
+        
+     
+
         
         if indexPath.row == drinks.drinkArray.count-1 && drinks.alphabetIndex <
             drinks.alphabet.count {
@@ -109,6 +112,6 @@ extension ListCocktailsViewController: UITextFieldDelegate, UITableViewDataSourc
         return cell
         
     }
-    
 
+    
 }

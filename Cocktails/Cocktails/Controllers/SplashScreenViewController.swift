@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import FirebaseAuth
 
 class SplashScreenViewController: UIViewController {
 
@@ -15,7 +16,24 @@ class SplashScreenViewController: UIViewController {
         
     }
     
-
+    func checkForUser () {
+    if Auth.auth().currentUser != nil, let id = Auth.auth().currentUser?.uid {
+        DataStore.shared.getUserWith(id: id) {[weak self] ( user, error) in
+            if let user = user {
+                DataStore.shared.localUser = user
+                self?.performSegue(withIdentifier: "ListCocktailsSegue", sender: nil)
+                return
+            }
+            do {
+                self?.performSegue(withIdentifier: "welcomeSegue", sender: nil)
+            } catch {
+                print(error.localizedDescription)
+            }
+        }
+    }else {
+        performSegue(withIdentifier: "welcomeSegue", sender: nil)
+    }
+}
    
 
 }

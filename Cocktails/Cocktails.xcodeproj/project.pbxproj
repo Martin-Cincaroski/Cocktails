@@ -22,6 +22,10 @@
 		58A2B10026847071003C85F8 /* ForgotPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58A2B0FF26847071003C85F8 /* ForgotPasswordViewController.swift */; };
 		58A2B11E2684B506003C85F8 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58A2B11D2684B506003C85F8 /* User.swift */; };
 		58A2B1212684F717003C85F8 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 58A2B1202684F717003C85F8 /* GoogleService-Info.plist */; };
+		58A469E22694563200B8E0CC /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58A469E12694563200B8E0CC /* WelcomeViewController.swift */; };
+		58D75CB92693264B004E8C74 /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58D75CB82693264B004E8C74 /* String.swift */; };
+		58D75CBC26932656004E8C74 /* UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58D75CBB26932655004E8C74 /* UIViewController.swift */; };
+		58D75CC0269326CF004E8C74 /* DataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58D75CBF269326CF004E8C74 /* DataStore.swift */; };
 		7FD3D48D2445FB0F6795C615 /* Pods_Cocktails.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7C02DE102698AC700BEC42FA /* Pods_Cocktails.framework */; };
 /* End PBXBuildFile section */
 
@@ -29,6 +33,7 @@
 		5818F1FB268370E200D18776 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		5818F1FE2683712900D18776 /* SplashScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashScreenViewController.swift; sourceTree = "<group>"; };
 		5818F20226838DFB00D18776 /* ListCocktailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListCocktailsViewController.swift; sourceTree = "<group>"; };
+		584A09732693DB9300CA744D /* Cocktails.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Cocktails.entitlements; sourceTree = "<group>"; };
 		584A64B526812E3400B4EA0D /* Cocktails.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Cocktails.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		584A64B826812E3400B4EA0D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		584A64BA26812E3400B4EA0D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -43,6 +48,10 @@
 		58A2B0FF26847071003C85F8 /* ForgotPasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPasswordViewController.swift; sourceTree = "<group>"; };
 		58A2B11D2684B506003C85F8 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		58A2B1202684F717003C85F8 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		58A469E12694563200B8E0CC /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
+		58D75CB82693264B004E8C74 /* String.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
+		58D75CBB26932655004E8C74 /* UIViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewController.swift; sourceTree = "<group>"; };
+		58D75CBF269326CF004E8C74 /* DataStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataStore.swift; sourceTree = "<group>"; };
 		7C02DE102698AC700BEC42FA /* Pods_Cocktails.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Cocktails.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8568D0FE3D2C90ABF183E7D6 /* Pods-Cocktails.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Cocktails.debug.xcconfig"; path = "Target Support Files/Pods-Cocktails/Pods-Cocktails.debug.xcconfig"; sourceTree = "<group>"; };
 		A7F7405E57242AAFAA3752BB /* Pods-Cocktails.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Cocktails.release.xcconfig"; path = "Target Support Files/Pods-Cocktails/Pods-Cocktails.release.xcconfig"; sourceTree = "<group>"; };
@@ -69,6 +78,7 @@
 				5897F7D32687D8B10033D857 /* DetailViewController.swift */,
 				58A2B0FC26846FE3003C85F8 /* RegisterViewController.swift */,
 				58A2B0FF26847071003C85F8 /* ForgotPasswordViewController.swift */,
+				58A469E12694563200B8E0CC /* WelcomeViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -94,6 +104,9 @@
 		584A64B726812E3400B4EA0D /* Cocktails */ = {
 			isa = PBXGroup;
 			children = (
+				584A09732693DB9300CA744D /* Cocktails.entitlements */,
+				58D75CBE269326B3004E8C74 /* Managers */,
+				58D75CB726932631004E8C74 /* Extension */,
 				58A2B11C2684B4F0003C85F8 /* Models */,
 				5818F1F52683707E00D18776 /* Controllers */,
 				584A64B826812E3400B4EA0D /* AppDelegate.swift */,
@@ -115,6 +128,23 @@
 				5897F7D62687FD650033D857 /* Drinks.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		58D75CB726932631004E8C74 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				58D75CB82693264B004E8C74 /* String.swift */,
+				58D75CBB26932655004E8C74 /* UIViewController.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		58D75CBE269326B3004E8C74 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				58D75CBF269326CF004E8C74 /* DataStore.swift */,
+			);
+			path = Managers;
 			sourceTree = "<group>";
 		};
 		5D6FFC52C83884212C364C0C /* Pods */ = {
@@ -146,6 +176,7 @@
 				584A64B226812E3400B4EA0D /* Frameworks */,
 				584A64B326812E3400B4EA0D /* Resources */,
 				BB1C2DDAB236EBFBA83FEAA4 /* [CP] Embed Pods Frameworks */,
+				F8B5B3DE4E079DEC32C0D567 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -242,6 +273,23 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		F8B5B3DE4E079DEC32C0D567 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Cocktails/Pods-Cocktails-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Cocktails/Pods-Cocktails-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Cocktails/Pods-Cocktails-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -250,11 +298,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				5897F7D42687D8B10033D857 /* DetailViewController.swift in Sources */,
+				58A469E22694563200B8E0CC /* WelcomeViewController.swift in Sources */,
 				5818F20326838DFB00D18776 /* ListCocktailsViewController.swift in Sources */,
 				58A2B10026847071003C85F8 /* ForgotPasswordViewController.swift in Sources */,
 				5897F7DA2688086E0033D857 /* Drink.swift in Sources */,
 				5818F1FC268370E200D18776 /* LoginViewController.swift in Sources */,
 				584A64B926812E3400B4EA0D /* AppDelegate.swift in Sources */,
+				58D75CB92693264B004E8C74 /* String.swift in Sources */,
+				58D75CC0269326CF004E8C74 /* DataStore.swift in Sources */,
+				58D75CBC26932656004E8C74 /* UIViewController.swift in Sources */,
 				58A2B11E2684B506003C85F8 /* User.swift in Sources */,
 				5897F7D72687FD650033D857 /* Drinks.swift in Sources */,
 				58A2B0FD26846FE3003C85F8 /* RegisterViewController.swift in Sources */,
@@ -407,7 +459,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_ENTITLEMENTS = Cocktails/Cocktails.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = Cocktails/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -415,6 +470,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.codeacademy.Cocktails;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -426,7 +482,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_ENTITLEMENTS = Cocktails/Cocktails.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = Cocktails/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -434,6 +493,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.codeacademy.Cocktails;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
