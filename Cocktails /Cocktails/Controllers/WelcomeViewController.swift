@@ -68,17 +68,7 @@ class WelcomeViewController: UIViewController, LoginButtonDelegate {
         
     }
     
-    func setConstraintsForSmallerDevices() {
-        if DeviceType.IS_IPHONE_6 {
-            imageTopConstraint.constant = 60
-            createAcountBottomConstraint.constant = 70
-        } else if DeviceType.IS_IPHONE_5 || DeviceType.IS_IPHONE_4_OR_LESS {
-            imageTopConstraint.constant = 40
-            imageWidthConstraint.constant = imageWidthConstraint.constant / 2.0
-            imageHeightConstraint.constant = imageHeightConstraint.constant / 2.0
-            createAcountBottomConstraint.constant = 40
-        }
-    }
+   
        
     
     

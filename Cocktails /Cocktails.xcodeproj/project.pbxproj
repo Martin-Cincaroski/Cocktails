@@ -22,7 +22,6 @@
 		58A2B1212684F717003C85F8 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 58A2B1202684F717003C85F8 /* GoogleService-Info.plist */; };
 		58A469E22694563200B8E0CC /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58A469E12694563200B8E0CC /* WelcomeViewController.swift */; };
 		58A98FCE26C1C984000BDD77 /* ListCocktailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58A98FCD26C1C984000BDD77 /* ListCocktailsViewController.swift */; };
-		58B1F3E026A81C5F00EDD62C /* DeviceType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58B1F3DF26A81C5F00EDD62C /* DeviceType.swift */; };
 		58D423BB26BC089F003A69F6 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 58D423BA26BC089F003A69F6 /* SnapKit */; };
 		58D75CB92693264B004E8C74 /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58D75CB82693264B004E8C74 /* String.swift */; };
 		58D75CBC26932656004E8C74 /* UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58D75CBB26932655004E8C74 /* UIViewController.swift */; };
@@ -49,7 +48,6 @@
 		58A2B1202684F717003C85F8 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		58A469E12694563200B8E0CC /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
 		58A98FCD26C1C984000BDD77 /* ListCocktailsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListCocktailsViewController.swift; sourceTree = "<group>"; };
-		58B1F3DF26A81C5F00EDD62C /* DeviceType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DeviceType.swift; sourceTree = "<group>"; };
 		58D75CB82693264B004E8C74 /* String.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
 		58D75CBB26932655004E8C74 /* UIViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewController.swift; sourceTree = "<group>"; };
 		58D75CBF269326CF004E8C74 /* DataStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataStore.swift; sourceTree = "<group>"; };
@@ -106,7 +104,6 @@
 			isa = PBXGroup;
 			children = (
 				584A09732693DB9300CA744D /* Cocktails.entitlements */,
-				58B1F3DE26A81C5F00EDD62C /* Helpers */,
 				58D75CBE269326B3004E8C74 /* Managers */,
 				58D75CB726932631004E8C74 /* Extension */,
 				58A2B11C2684B4F0003C85F8 /* Models */,
@@ -130,15 +127,6 @@
 				5897F7D62687FD650033D857 /* Drinks.swift */,
 			);
 			path = Models;
-			sourceTree = "<group>";
-		};
-		58B1F3DE26A81C5F00EDD62C /* Helpers */ = {
-			isa = PBXGroup;
-			children = (
-				58B1F3DF26A81C5F00EDD62C /* DeviceType.swift */,
-			);
-			name = Helpers;
-			path = ../../../../../Desktop/SocialMedia/SocialMedia/Helpers;
 			sourceTree = "<group>";
 		};
 		58D75CB726932631004E8C74 /* Extension */ = {
@@ -323,7 +311,6 @@
 				584A64B926812E3400B4EA0D /* AppDelegate.swift in Sources */,
 				58D75CB92693264B004E8C74 /* String.swift in Sources */,
 				58D75CC0269326CF004E8C74 /* DataStore.swift in Sources */,
-				58B1F3E026A81C5F00EDD62C /* DeviceType.swift in Sources */,
 				58D75CBC26932656004E8C74 /* UIViewController.swift in Sources */,
 				58A2B11E2684B506003C85F8 /* User.swift in Sources */,
 				5897F7D72687FD650033D857 /* Drinks.swift in Sources */,
